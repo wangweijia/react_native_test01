@@ -31,6 +31,8 @@ export default class FirstPage extends Component {
 
   render() {
     // 点击按钮使用Home页面入栈
+    console.log("-=-=-=-=-=-=-wwj message");
+
     return (
         <View style={styles.container}>
             <TouchableOpacity

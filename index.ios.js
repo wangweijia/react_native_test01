@@ -5,8 +5,6 @@ import { AppRegistry } from 'react-native';
 
 // var SimpleView = require('./navigator_simple.js');
 // var UniformView = require('./navigator_uniform.js');
-import FirstPage from './FirstPage';
-import SimpleView from './navigator_simple';
 import BaseNavigator from './BaseNavigator';
 import BaseTabBar from './BaseTabBar';
 

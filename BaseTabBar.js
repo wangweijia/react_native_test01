@@ -6,11 +6,8 @@ import { AppRegistry, TabBarIOS, Text, View, StyleSheet } from 'react-native';
 // var SimpleView = require('./navigator_simple.js');
 // var UniformView = require('./navigator_uniform.js');
 import FirstPage from './FirstPage';
-import SimpleView from './navigator_simple';
-import BaseNavigator from './BaseNavigator';
 
 export default class TabBarExample extends Component {
-
     constructor (props) {
         super(props);
         this.state = {
