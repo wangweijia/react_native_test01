@@ -3,8 +3,6 @@
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 
-// var SimpleView = require('./navigator_simple.js');
-// var UniformView = require('./navigator_uniform.js');
 import BaseNavigator from './BaseComponent/BaseNavigator';
 import BaseTabBar from './BaseComponent/BaseTabBar';
 
