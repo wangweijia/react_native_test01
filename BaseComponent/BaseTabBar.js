@@ -3,15 +3,13 @@
 import React, { Component } from 'react';
 import { AppRegistry, TabBarIOS, Text, View, StyleSheet } from 'react-native';
 
-// var SimpleView = require('./navigator_simple.js');
-// var UniformView = require('./navigator_uniform.js');
-import FirstPage from './FirstPage';
+import FirstPage from '../ViewControllers/FirstPage';
 
 export default class TabBarExample extends Component {
     constructor (props) {
         super(props);
         this.state = {
-            selectedTab: 'readTab',
+            selectedTab: 'blueTab',
             notifCount: 0,
             presses: 0,
         }
@@ -56,8 +54,8 @@ export default class TabBarExample extends Component {
                 </TabBarIOS.Item>
 
                 <TabBarIOS.Item
-                icon={require('./Image/tab.png')}
-                selectedIcon={require('./Image/tab.png')}
+                icon={require('../Image/tab.png')}
+                selectedIcon={require('../Image/tab.png')}
                 renderAsOriginal
                 title="More"
                 selected={this.state.selectedTab === 'greenTab'}

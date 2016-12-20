@@ -5,8 +5,8 @@ import { AppRegistry } from 'react-native';
 
 // var SimpleView = require('./navigator_simple.js');
 // var UniformView = require('./navigator_uniform.js');
-import BaseNavigator from './BaseNavigator';
-import BaseTabBar from './BaseTabBar';
+import BaseNavigator from './BaseComponent/BaseNavigator';
+import BaseTabBar from './BaseComponent/BaseTabBar';
 
 class MainController extends Component {
     render () {
