@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { AppRegistry, TabBarIOS, Text, View, StyleSheet } from 'react-native';
 
 import FirstPage from '../ViewControllers/FirstPage';
+import Bar2FirstViewController from '../ViewControllers/Bar2/FirstViewController';
 
 export default class TabBarExample extends Component {
     constructor (props) {
@@ -37,7 +38,7 @@ export default class TabBarExample extends Component {
                         selectedTab: 'blueTab',
                     });
                 }}>
-                <FirstPage navigator={this.props.navigator} />
+                    <FirstPage navigator={this.props.navigator} />
                 </TabBarIOS.Item>
 
                 <TabBarIOS.Item
@@ -50,7 +51,7 @@ export default class TabBarExample extends Component {
                         notifCount: this.state.notifCount + 1,
                     });
                 }}>
-                {this.renderContent('#783E33', 'Red Tab', this.state.notifCount)}
+                    <Bar2FirstViewController/>
                 </TabBarIOS.Item>
 
                 <TabBarIOS.Item
@@ -65,7 +66,7 @@ export default class TabBarExample extends Component {
                         presses: this.state.presses + 1
                     });
                 }}>
-                {this.renderContent('#21551C', 'Green Tab', this.state.presses)}
+                    {this.renderContent('#21551C', 'Green Tab', this.state.presses)}
                 </TabBarIOS.Item>
             </TabBarIOS>
         )
